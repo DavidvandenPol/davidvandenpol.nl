@@ -1,0 +1,12 @@
+@import "../../styles/assets/colors.scss";
+
+nav {
+    background-color: $dark-background-color;
+
+    .background-image {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0;
+    }
+}
+
