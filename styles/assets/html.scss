@@ -1,0 +1,26 @@
+@import "./colors";
+
+body {
+    background-color: $background-color;
+    color: #D7DDED;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+
+    @screen md {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+
+    @screen md {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
