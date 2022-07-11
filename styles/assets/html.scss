@@ -1,7 +1,7 @@
 @import "./colors";
 
 body {
-    background-color: $background-color;
+    background-color: $light-background-color;
     color: #D7DDED;
 }
 
@@ -12,6 +12,16 @@ h1 {
     @screen md {
         font-size: 3rem;
         line-height: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+
+    @screen md {
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 }
 

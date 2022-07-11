@@ -1,0 +1,101 @@
+.header {
+    @apply container px-2 mx-auto mt-12 md:mt-32 mb-16 md:mb-40;
+
+    & > .wp-block-media-text {
+        & > .wp-block-media-text__content {
+            p {
+                @apply mt-4 md:mt-6 mb-6 md:mb-10 text-sm md:text-base;
+            }
+
+            & > .wp-block-buttons {
+                @apply flex gap-12 flex-wrap;
+            }
+        }
+    }
+}
+
+.works {
+    @apply bg-backgroundColor bg-opacity-40;
+
+    & .wp-block-group {
+        @apply container px-2 mx-auto pt-14 pb-20 text-center;
+
+        p {
+            @apply mt-2 mb-8 font-semibold text-sm;
+        }
+
+        & .wp-block-columns {
+            @apply grid gap-12;
+            grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+
+            @screen lg {
+                @apply gap-20;
+            }
+
+            & .wp-block-media-text__content {
+                & .card-title {
+                    @apply mb-0 text-base text-left underline;
+
+                    @screen lg {
+                        @apply text-xl;
+                    }
+                }
+
+                & .card-description {
+                    @apply mb-4 text-left text-xs;
+
+                    @screen lg {
+                        @apply text-sm;
+                    }
+                }
+
+                & .wp-block-buttons {
+                    @apply flex gap-12 justify-between;
+
+                    & .is-style-ghost {
+                        @apply self-center;
+                    }
+                }
+            }
+        }
+
+        & .see-all {
+            @apply mt-12 text-center;
+
+            @screen lg {
+                @apply mt-10 text-right;
+            }
+        }
+    }
+}
+
+
+.blog {
+    @apply container mx-auto mt-20 mb-28;
+
+    p {
+        @apply mt-2 mb-8 font-semibold text-sm;
+    }
+
+    & .wp-block-columns {
+        @apply flex justify-between;
+
+        & .wp-block-column {
+            & .wp-block-media-text__content {
+                p {
+                    @apply my-3 text-xs font-normal;
+                }
+
+                & .blog-content {
+                    @apply mt-0 text-sm;
+                }
+            }
+        }
+
+        & .wp-block-group {
+            & .wp-block-media-text {
+                @apply flex;
+            }
+        }
+    }
+}

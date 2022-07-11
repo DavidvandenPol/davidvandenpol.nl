@@ -1,11 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-davidvandenpol.nl',
+    title: 'David van den Pol - Web Developer Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: "I'm David van den Pol a student software developer specialized in building (and occasionally designing) exceptional digital websites. Currently, I’m concentrating on my internship at Mooore Digital." },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
