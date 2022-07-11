@@ -71,16 +71,20 @@
 
 
 .blog {
-    @apply container mx-auto mt-20 mb-28;
+    @apply container px-2 mx-auto mt-20 mb-28;
 
     p {
         @apply mt-2 mb-8 font-semibold text-sm;
     }
 
     & .wp-block-columns {
-        @apply flex justify-between;
+        @apply flex gap-4 lg:gap-20 xl:gap-44;
 
         & .wp-block-column {
+            &:last-child {
+                @apply flex-auto;
+            }
+
             & .wp-block-media-text__content {
                 p {
                     @apply my-3 text-xs font-normal;
@@ -89,12 +93,57 @@
                 & .blog-content {
                     @apply mt-0 text-sm;
                 }
+
+                & .wp-block-columns {
+                    @apply mt-7 gap-4;
+
+                    & .blog-autor {
+                        @apply m-0 text-sm font-bold;
+                    }
+
+                    & .blog-date {
+                        @apply m-0 text-textGray font-semibold;
+                    }
+
+                    & .blog-cta {
+                        @apply ml-auto flex-none;
+                    }
+                }
+
+                & .wp-block-columns::before	{
+                    @apply mr-2 inline w-9 min-h-full bg-no-repeat bg-contain;
+                    content: "";
+                    background-image: url("../../assets/images/davidvandenpol-face.svg");
+                }
             }
         }
 
         & .wp-block-group {
+            @apply mb-4;
+
+            &:last-child {
+                @apply mb-0;
+            }
+
             & .wp-block-media-text {
-                @apply flex;
+                @apply flex gap-4;
+
+                & .wp-block-media-text__media {
+                    width: 235px;
+                    height: 176px;
+                }
+
+                & .wp-block-media-text__content {
+                    @apply flex-auto;
+
+                    & .wp-block-columns {
+                        @apply gap-2;
+                    }
+
+                    & .blog-cta {
+                        @apply flex-none;
+                    }
+                }
             }
         }
     }
