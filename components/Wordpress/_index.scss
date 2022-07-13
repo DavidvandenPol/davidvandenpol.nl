@@ -1,3 +1,6 @@
+@import "@fylgja/scroll-slider";
+@import "../../styles/components/full-bleed.scss";
+
 .header {
     @apply container px-2 mx-auto mt-12 md:mt-32 mb-16 md:mb-40;
 
@@ -18,18 +21,30 @@
     @apply bg-backgroundColor bg-opacity-40;
 
     & .wp-block-group {
-        @apply container px-2 mx-auto pt-14 pb-20 text-center;
+        @apply full-bleed container px-2 mx-auto pt-14 pb-20 text-center;
 
         p {
             @apply mt-2 mb-8 font-semibold text-sm;
         }
 
         & .wp-block-columns {
-            @apply grid gap-12;
-            grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+            @apply flex gap-4 scroll-slider;
+            --scroll-size: 285px;
+            padding-left: 8px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @screen md {
+                @apply gap-12;
+            }
 
             @screen lg {
                 @apply gap-20;
+                --scroll-size: 434px;
             }
 
             & .wp-block-media-text__content {
@@ -42,7 +57,7 @@
                 }
 
                 & .card-description {
-                    @apply mb-4 text-left text-xs;
+                    @apply mb-4 text-left text-xs font-normal;
 
                     @screen lg {
                         @apply text-sm;
@@ -78,11 +93,48 @@
     }
 
     & .wp-block-columns {
-        @apply flex gap-4 lg:gap-20 xl:gap-44;
+        @apply flex-col gap-4;
 
+        @screen md {
+            @apply flex flex-row;
+        }
+
+        @screen lg {
+            @apply gap-20;
+        }
+
+        @screen xl {
+            @apply gap-44;
+        }
+
+        & .big-blog-post {
+            @apply mb-4;
+
+            @screen sm {
+                @apply mb-0;
+            }
+        }
+
+        // Big blog card
         & .wp-block-column {
             &:last-child {
                 @apply flex-auto;
+            }
+
+            & .wp-block-media-text {
+                @apply gap-4;
+
+                & .wp-block-media-text__content {
+                    @apply flex-auto;
+
+                    & .wp-block-columns {
+                        @apply gap-2;
+                    }
+
+                    & .blog-cta {
+                        @apply flex-none;
+                    }
+                }
             }
 
             & .wp-block-media-text__content {
@@ -95,7 +147,7 @@
                 }
 
                 & .wp-block-columns {
-                    @apply mt-7 gap-4;
+                    @apply flex flex-row mt-7 gap-4;
 
                     & .blog-autor {
                         @apply m-0 text-sm font-bold;
@@ -118,6 +170,7 @@
             }
         }
 
+        // Small blog cards
         & .wp-block-group {
             @apply mb-4;
 
@@ -126,11 +179,17 @@
             }
 
             & .wp-block-media-text {
-                @apply flex gap-4;
+                @apply flex flex-col gap-4;
+
+                @screen sm {
+                    @apply flex flex-row;
+                }
 
                 & .wp-block-media-text__media {
-                    width: 235px;
-                    height: 176px;
+                    @screen sm {
+                        width: 235px;
+                        height: 176px;
+                    }
                 }
 
                 & .wp-block-media-text__content {
