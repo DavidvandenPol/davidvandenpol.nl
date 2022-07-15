@@ -1,12 +1,24 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'David van den Pol - Web Developer Portfolio',
+    title: 'David van den Pol - Frontend Web Developer - Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "I'm David van den Pol a student software developer specialized in building (and occasionally designing) exceptional digital websites. Currently, I’m concentrating on my internship at Mooore Digital." },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'robots', content: 'index, follow' },
+      { hid: 'description', name: 'description', content: "I'm David van den Pol a Frontend Web Developer. I'm a Frontend Web Developer for a couple years. David van den Pol - Frontend Web Developer - Portfolio" },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: "David van den Pol - Frontend Web Developer - Portfolio" },
+      { property: "og:description", content: "I'm David van den Pol a Frontend Web Developer. I'm a Frontend Web Developer for a couple years. David van den Pol - Frontend Web Developer - Portfolio" },
+      { property: "og:url", content: "https://davidvandenpol.nl/" },
+      { property: "og:site_name", content: "David van den Pol: Frontend Web Developer Portfolio" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "David van den Pol - Frontend Web Developer - Portfolio" },
+      { name: "twitter:description", content: "Neoistone is a reliable, fast and robust platform for all the needs of Hosting and Domain name development tools is so easy to use that litespeed it makes fast site" },
+      { name: "twitter:image", content: "https://davidvandenpol.nl/_nuxt/img/davidvandenpol-face.6d58ddb.svg" },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

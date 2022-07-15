@@ -2,6 +2,7 @@
     <div>
         <Navbar/>
         <Wordpress :data="pages"/>
+        <Footer/>
     </div>
 </template>
 

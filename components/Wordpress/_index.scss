@@ -207,3 +207,84 @@
         }
     }
 }
+
+.about-me {
+    @apply py-14 bg-backgroundColor bg-opacity-40;
+
+    & .wp-block-group {
+        @apply container mx-auto px-2;
+
+        & .about-me-description {
+            @apply font-semibold;
+        }
+
+        h3 {
+            @apply text-left;
+        }
+
+        p {
+            @apply mt-2 mb-8 text-sm text-left;
+        }
+
+        & .wp-block-media-text {
+            @apply block container mx-auto;
+
+            @screen lg {
+                @apply flex gap-24 pt-9 justify-center;
+            }
+
+            & .wp-block-media-text__media {
+                display: none;
+
+                @screen lg {
+                    @apply block;
+                }
+            }
+
+            & .wp-block-media-text__content {
+                @apply full-bleed;
+
+                & .tech-slider {
+                    @apply grid gap-4 pl-0 m-0;
+                    grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+
+                    & .wp-block-group {
+                        @apply rounded-xl drop-shadow-2xl bg-lightBackgroundColor;
+                        width: 81px;
+                        height: 81px;
+
+                        img {
+                            margin: auto;
+                            margin-top: 16px;
+                            margin-bottom: 16px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-media {
+    @apply container px-2 mx-auto mt-20 mb-28;
+
+    & .wp-block-columns {
+        @apply flex flex-col;
+
+        @screen lg {
+            @apply flex flex-row;
+        }
+
+        & .wp-block-group {
+            & .wp-block-columns {
+                @apply p-6 mb-4 rounded-lg justify-between;
+                background-color: #212C3D;
+
+                & .wp-block-column {
+                    @apply mr-auto pl-4;
+                }
+            }
+        }
+    }
+}
