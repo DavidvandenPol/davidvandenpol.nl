@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "nuxt-compress": "^5.0.0",
     "postcss": "^8.4.4"
   }
 }

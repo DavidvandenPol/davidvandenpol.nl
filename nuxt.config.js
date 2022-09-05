@@ -40,6 +40,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    'nuxt-compress'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,7 +49,17 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-compress',
   ],
+
+    'nuxt-compress': {
+        gzip: {
+            threshold: 8192,
+        },
+        brotli: {
+            threshold: 8192,
+        },
+    },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
