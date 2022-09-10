@@ -1,13 +1,13 @@
 <template>
-    <div v-html="data" />
+	<div v-html="data" />
 </template>
 
 <script>
 export default {
-    props: ['data'],
-}
+	props: ["data"],
+};
 </script>
 
 <style lang="scss">
-    @import "./index.scss";
+@import "./index";
 </style>

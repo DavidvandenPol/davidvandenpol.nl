@@ -1,21 +1,8 @@
 @import "@fylgja/scroll-slider";
 @import "../../styles/components/full-bleed.scss";
 
-.header {
-    @apply container px-2 mx-auto mt-12 md:mt-32 mb-16 md:mb-40;
-
-    & > .wp-block-media-text {
-        & > .wp-block-media-text__content {
-            p {
-                @apply mt-4 md:mt-6 mb-6 md:mb-10 text-sm md:text-base;
-            }
-
-            & > .wp-block-buttons {
-                @apply flex gap-12 flex-wrap;
-            }
-        }
-    }
-}
+// Imports
+@import "./Header/index";
 
 .works {
     @apply bg-backgroundColor bg-opacity-40;
@@ -83,7 +70,6 @@
         }
     }
 }
-
 
 .blog {
     @apply container px-2 mx-auto mt-20 mb-28;
@@ -162,7 +148,7 @@
                     }
                 }
 
-                & .wp-block-columns::before	{
+                & .wp-block-columns::before {
                     @apply mr-2 inline w-9 min-h-full bg-no-repeat bg-contain;
                     content: "";
                     background-image: url("../../assets/images/davidvandenpol-face.svg");
@@ -279,7 +265,7 @@
         & .wp-block-group {
             & .wp-block-columns {
                 @apply p-6 mb-4 rounded-lg justify-between;
-                background-color: #212C3D;
+                background-color: #212c3d;
 
                 & .wp-block-column {
                     @apply mr-auto pl-4;
