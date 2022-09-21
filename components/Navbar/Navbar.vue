@@ -70,7 +70,7 @@
 						inline-flex
 						justify-center
 						mx-2
-						md:mx-6
+						md:ml-6
 						text-textColor
 						font-bold
 					"
