@@ -1,30 +1,52 @@
 .header {
-    @apply container px-2 mx-auto mt-12 md:mt-44 mb-16 md:mb-40;
+    @apply container px-2 mx-auto mt-16 md:mt-44 mb-16 md:mb-40;
 
     & > .wp-block-columns {
         @apply flex flex-col md:flex-row justify-between;
 
         & > .wp-block-column {
             :is(h1) {
-                font-size: 4rem;
-                line-height: 4.25rem;
+                font-size: 2rem;
+                line-height: 3rem;
+
+                @screen lg {
+                    font-size: 4rem;
+                    line-height: 4.25rem;
+                }
             }
 
             :is(h2) {
-                @apply text-4xl;
+                @apply text-xl;
+
+                @screen lg {
+                    @apply text-4xl;
+                }
             }
 
             p {
-                @apply mt-4 md:mt-6 mb-4 text-sm md:text-base;
+                @apply mt-4 mb-4 text-sm md:text-base;
                 color: rgba(215, 221, 237, 0.8);
             }
 
             .usps {
-                @apply mt-4 md:mb-16;
+                @apply mt-4 mb-12 md:mb-16;
             }
 
             & > .wp-block-buttons {
                 @apply flex gap-12 flex-wrap;
+            }
+
+            .wp-block-columns {
+                display: flex;
+                gap: 32px;
+            }
+        }
+
+        & > .wp-block-column:last-child {
+            display: none;
+
+            @screen lg {
+                display: block;
             }
         }
     }
