@@ -1,0 +1,78 @@
+.works {
+    @apply bg-backgroundColor bg-opacity-40;
+
+    & .wp-block-group {
+        @apply full-bleed px-2 mx-auto pt-14 pb-20 text-center;
+
+        @screen lg {
+            @apply container;
+        }
+
+        p {
+            @apply mt-2 mb-12 font-semibold text-sm;
+        }
+
+        & .wp-block-columns {
+            @apply flex gap-4 scroll-slider;
+            --scroll-size: 285px;
+            padding-left: 8px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @screen md {
+                @apply gap-12;
+            }
+
+            @screen lg {
+                @apply gap-20;
+                --scroll-size: 434px;
+            }
+
+            & .wp-block-media-text__content {
+                & .card-title {
+                    @apply mt-8 mb-0 text-base text-left underline;
+
+                    strong {
+                        @apply font-bold;
+                    }
+
+                    @screen lg {
+                        @apply text-xl;
+                    }
+                }
+
+                & .card-description {
+                    @apply mb-4 text-xs text-left font-normal;
+
+                    p {
+                        color: #d7ddEd;
+                    }
+
+                    @screen lg {
+                        @apply text-sm;
+                    }
+                }
+
+                & .wp-block-buttons {
+                    @apply flex gap-12 justify-between;
+
+                    & .is-style-ghost {
+                        @apply self-center;
+                    }
+                }
+            }
+        }
+
+        & .see-all {
+            @apply mt-12 text-center;
+
+            @screen lg {
+                @apply mt-10 text-right;
+            }
+        }
+    }
+}
