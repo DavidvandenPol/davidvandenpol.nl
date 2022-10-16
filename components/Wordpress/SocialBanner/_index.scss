@@ -1,0 +1,23 @@
+$theme-color: #0077FF;
+
+.social-banner {
+    @apply my-28 text-center;
+
+    .social-banner-wrapper {
+        @apply mx-auto py-14;
+        width: 680px;
+
+        .social-banner-title {
+            @apply text-white text-5xl;
+            font-family: "Circular Bold"
+        }
+
+        .social-banner-description {
+            @apply mt-2 mb-6 text-white text-sm;
+        }
+
+        .social-link {
+            color: $theme-color;
+        }
+    }
+}

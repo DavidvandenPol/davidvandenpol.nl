@@ -1,24 +1,30 @@
 @font-face {
-    font-family: "Circular Light";
-    src: local("Circular Light"),
-     url(~assets/fonts/Circular-Light.otf);
+    font-family: "Circular Thin";
+    src: local("Circular Thin"),
+    url(~assets/fonts/ProductSans-Thin.ttf);
 }
 
 @font-face {
     font-family: "Circular Medium";
     src: local("Circular Medium"),
-     url(~assets/fonts/Circular-Medium.otf);
+    url(~assets/fonts/ProductSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Circular Regular";
+    src: local("Circular Regular"),
+    url(~assets/fonts/ProductSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "Circular Bold";
     src: local("Circular Bold"),
-     url(~assets/fonts/Circular-Bold.otf);
+    url(~assets/fonts/ProductSans-Bold.ttf);
 }
 
 @font-face {
     font-family: "Circular Black";
     src: local("Circular Black"),
-     url(~assets/fonts/Circular-Black.otf);
+    url(~assets/fonts/ProductSans-Black.ttf);
 }
 
