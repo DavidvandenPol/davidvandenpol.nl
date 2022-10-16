@@ -1,13 +1,24 @@
 .cards {
-    @apply container my-28 px-2 mx-auto;
+    @apply container my-28 px-2 mx-auto full-bleed;
 
     .wp-block-columns {
-        @apply grid mx-auto gap-10;
-        width: 970px;
-        grid-template-columns: repeat(3, 1fr);
+        @apply flex md:justify-center gap-4 scroll-slider;
+        --scroll-size: 250px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        animation: card 300ms;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @screen lg {
+            @apply gap-10;
+            --scroll-size: 298px;
+        }
 
         .wp-block-column {
-            @apply cursor-pointer;
+            @apply cursor-pointer hover:underline;
 
             .card-title {
                 @apply mt-4 mb-2 text-lg;
@@ -18,5 +29,16 @@
                 @apply text-sm;
             }
         }
+    }
+}
+
+@keyframes card {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

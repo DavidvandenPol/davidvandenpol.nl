@@ -5,10 +5,13 @@ $theme-color: #0077FF;
 
     .social-banner-wrapper {
         @apply mx-auto py-14;
-        width: 680px;
+
+        @screen md {
+            max-width: 680px;
+        }
 
         .social-banner-title {
-            @apply text-white text-5xl;
+            @apply text-white text-3xl md:text-5xl;
             font-family: "Circular Bold"
         }
 
@@ -17,6 +20,7 @@ $theme-color: #0077FF;
         }
 
         .social-link {
+            @apply hover:underline;
             color: $theme-color;
         }
     }

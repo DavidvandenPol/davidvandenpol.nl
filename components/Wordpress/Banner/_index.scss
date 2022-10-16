@@ -2,22 +2,26 @@ $theme-color: #0077FF;
 
 .banner {
     @apply my-28;
+    animation: banner 300ms;
 
     .banner-wrapper {
-        @apply mx-auto py-14;
-        width: 680px;
+        @apply container md:mx-auto py-14;
+
+        @screen md {
+            max-width: 680px;
+        }
 
         .banner-title {
-            @apply text-white text-5xl;
+            @apply mx-2 text-white text-3xl md:text-5xl;
             font-family: "Circular Bold"
         }
 
         .banner-description {
-            @apply mt-2 mb-6 text-white text-sm;
+            @apply mx-2 mt-2 mb-6 text-white text-sm;
         }
 
         .wp-block-buttons {
-            @apply flex rounded-lg cursor-pointer;
+            @apply flex mx-2 rounded-lg cursor-pointer;
 
             .wp-block-button {
                 padding: 13px 34px;
@@ -27,5 +31,16 @@ $theme-color: #0077FF;
                 @apply hover:underline;
             }
         }
+    }
+}
+
+@keyframes banner {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

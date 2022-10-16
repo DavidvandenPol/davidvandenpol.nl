@@ -3,10 +3,13 @@
 
     .about-me-wrapper {
         @apply mx-auto;
-        width: 680px;
+
+        @screen md {
+            max-width: 680px;
+        }
 
         .about-me-title {
-            @apply text-6xl text-center;
+            @apply text-5xl md:text-6xl text-center;
             font-family: "Circular Bold";
         }
 
@@ -14,6 +17,7 @@
             @apply mt-6;
 
             mark {
+                @apply cursor-pointer hover:underline;
                 color: #0077ff;
             }
         }

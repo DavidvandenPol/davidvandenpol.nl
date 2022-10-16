@@ -4,13 +4,15 @@ header {
     @apply container px-2 mx-auto mt-16 md:mt-36 mb-16 md:mb-28 text-center;
 
     h1 {
-        @apply mb-6 text-7xl;
+        @apply mb-6 text-6xl md:text-7xl;
         font-family: "Circular Bold";
+        animation: title 600ms;
     }
 
     p {
         @apply text-2xl;
         font-family: "Circular Medium";
+        animation: slug 500ms;
 
         mark {
             @apply text-textColor;
@@ -18,8 +20,9 @@ header {
     }
 
     .wp-block-buttons {
-        @apply flex mt-14 justify-center gap-14 rounded-lg cursor-pointer;
+        @apply flex mt-14 justify-center gap-4 md:gap-14 rounded-lg cursor-pointer;
         font-family: "Circular Bold";
+        animation: cta 400ms;
 
         .wp-block-button {
             padding: 13px 34px;
@@ -33,5 +36,38 @@ header {
             color: #161616;
             @apply hover:underline;
         }
+    }
+}
+
+@keyframes title {
+    0% {
+        transform: translateY(95px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slug {
+    0% {
+        transform: translateY(90px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes cta {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
