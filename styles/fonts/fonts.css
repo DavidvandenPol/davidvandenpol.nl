@@ -1,29 +1,24 @@
 @font-face {
-    font-family: "ProductSans Thin";
-    src: local("ProductSans Thin"),
-     url(~assets/fonts/ProductSans-Thin.ttf);
+    font-family: "Circular Light";
+    src: local("Circular Light"),
+     url(~assets/fonts/Circular-Light.otf);
 }
 
 @font-face {
-    font-family: "ProductSans Light";
-    src: local("ProductSans Light"),
-     url(~assets/fonts/ProductSans-Light.ttf);
+    font-family: "Circular Medium";
+    src: local("Circular Medium"),
+     url(~assets/fonts/Circular-Medium.otf);
 }
 
 @font-face {
-    font-family: "ProductSans Regular";
-    src: local("ProductSans Regular"),
-     url(~assets/fonts/ProductSans-Regular.ttf);
+    font-family: "Circular Bold";
+    src: local("Circular Bold"),
+     url(~assets/fonts/Circular-Bold.otf);
 }
 
 @font-face {
-    font-family: "ProductSans Medium";
-    src: local("ProductSans Medium"),
-     url(~assets/fonts/ProductSans-Medium.ttf);
+    font-family: "Circular Black";
+    src: local("Circular Black"),
+     url(~assets/fonts/Circular-Black.otf);
 }
 
-@font-face {
-    font-family: "ProductSans Bold";
-    src: local("ProductSans Bold"),
-     url(~assets/fonts/ProductSans-Bold.ttf);
-}

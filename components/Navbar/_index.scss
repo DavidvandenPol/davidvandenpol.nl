@@ -1,4 +1,8 @@
-.nav-icon {
-    width: 32px;
-    height: 42px;
+nav {
+    min-height: 55px;
+    border-bottom: 1px #e6e6e6 solid;
+
+    .font-bold {
+        font-family: "Circular Bold";
+    }
 }
