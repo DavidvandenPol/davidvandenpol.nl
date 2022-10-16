@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "ProductSans Thin";
+    src: local("ProductSans Thin"),
+     url(~assets/fonts/ProductSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: "ProductSans Light";
+    src: local("ProductSans Light"),
+     url(~assets/fonts/ProductSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "ProductSans Regular";
+    src: local("ProductSans Regular"),
+     url(~assets/fonts/ProductSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ProductSans Medium";
+    src: local("ProductSans Medium"),
+     url(~assets/fonts/ProductSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "ProductSans Bold";
+    src: local("ProductSans Bold"),
+     url(~assets/fonts/ProductSans-Bold.ttf);
+}
