@@ -9,28 +9,28 @@
 			<div class="m-auto z-10">
 				<a
 					class="inline-flex mx-2 md:mx-6 text-sm"
-					href="/"
+					href="/works"
 					aria-label="View all of David van den Pol's Works"
 				>
 					<span bis_skin_checked="1">Works</span>
 				</a>
 				<a
 					class="hidden sm:inline-flex mx-2 md:mx-6 text-sm"
-					href="/"
+					href="/blog"
 					aria-label="Read David van den Pol's Blog"
 				>
 					<span bis_skin_checked="2">Blog</span>
 				</a>
 				<a
 					class="hidden sm:inline-flex mx-2 md:mx-6 text-sm"
-					href="/"
+					href="/about"
 					aria-label="About David van den Pol"
 				>
 					<span bis_skin_checked="3">About me</span>
 				</a>
 				<a
 					class="hidden sm:inline-flex mx-2 md:mx-6 text-sm"
-					href="/"
+					href="/socialmedia"
 					aria-label="Social Media of David van den Pol"
 				>
 					<span bis_skin_checked="4">Social Media</span>
@@ -38,7 +38,7 @@
 			</div>
 			<a
 				class="inline-flex justify-center mx-2 md:ml-6 text-textColor font-bold text-sm"
-				href="/"
+				href="/letstalk"
 				aria-label="Contact David van den Pol"
 			>
 				<span bis_skin_checked="4" class="mr-2">Let's talk</span>

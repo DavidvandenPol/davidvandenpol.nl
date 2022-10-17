@@ -4,7 +4,7 @@
     <loc>https://www.davidvandenpol.nl/</loc>
   </url>
   <url>
-    <loc>https://www.davidvandenpol.nl/socials</loc>
+    <loc>https://www.davidvandenpol.nl/socialmedia</loc>
   </url>
   <url>
     <loc>https://www.davidvandenpol.nl/works</loc>
@@ -13,9 +13,12 @@
     <loc>https://www.davidvandenpol.nl/blog</loc>
   </url>
   <url>
-    <loc>https://www.davidvandenpol.nl/about-me</loc>
+    <loc>https://www.davidvandenpol.nl/about</loc>
   </url>
   <url>
-    <loc>https://www.davidvandenpol.nl/social-media</loc>
+    <loc>https://www.davidvandenpol.nl/portfolio</loc>
+  </url>
+  <url>
+    <loc>https://www.davidvandenpol.nl/letstalk</loc>
   </url>
 </urlset>
