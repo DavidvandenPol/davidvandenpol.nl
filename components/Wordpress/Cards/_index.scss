@@ -20,6 +20,20 @@
         .wp-block-column {
             @apply cursor-pointer hover:underline;
 
+            .wp-block-media-text__media {
+                img {
+                    max-width: 250px;
+                    max-height: 250px;
+                    object-fit: cover;
+
+                    @screen lg {
+                        max-width: 298px;
+                        max-height: 298px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
             .card-title {
                 @apply mt-4 mb-2 text-lg;
                 font-family: "Circular Bold"
