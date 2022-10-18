@@ -1,5 +1,3 @@
-$theme-color: #0055B8;
-
 .social-banner {
     @apply my-28 text-center;
 
@@ -20,8 +18,7 @@ $theme-color: #0055B8;
         }
 
         .social-link {
-            @apply hover:underline;
-            color: $theme-color;
+            @apply text-white hover:underline;
         }
     }
 }
