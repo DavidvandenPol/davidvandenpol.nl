@@ -1,48 +1,48 @@
 <template>
 	<nav aria-label="quick menu" class="py-3.5 z-10 bg-opacity-30">
 		<div class="px-2 mx-auto flex items-center container">
-			<router-link to="/">
+			<nuxt-link to="/">
 				<div class="flex flex-col justify-end sm:justify-center">
 					<span class="leading-5 text-xl font-bold">David</span>
 				</div>
-			</router-link>
+			</nuxt-link>
 			<div class="m-auto z-10">
-				<router-link
+				<nuxt-link
                     to="/works"
 					class="inline-flex mx-2 md:mx-6 text-sm"
 					aria-label="View all of David van den Pol's Works"
 				>
 					<span bis_skin_checked="1">Works</span>
-				</router-link>
-				<router-link
+				</nuxt-link>
+				<nuxt-link
                     to="/blog"
 					class="inline-flex mx-2 md:mx-6 text-sm"
 					aria-label="Read David van den Pol's Blog"
 				>
 					<span bis_skin_checked="2">Blog</span>
-				</router-link>
-				<router-link
+				</nuxt-link>
+				<nuxt-link
                     to="/about"
 					class="inline-flex mx-2 md:mx-6 text-sm"
 					aria-label="About David van den Pol"
 				>
 					<span bis_skin_checked="3">About me</span>
-				</router-link>
-				<router-link
+				</nuxt-link>
+				<nuxt-link
                     to="/socialmedia"
 					class="hidden sm:inline-flex mx-2 md:mx-6 text-sm"
 					aria-label="Social Media of David van den Pol"
 				>
 					<span bis_skin_checked="4">Social Media</span>
-				</router-link>
+				</nuxt-link>
 			</div>
-			<router-link
+			<nuxt-link
                 to="/letstalk"
 				class="inline-flex justify-center mx-2 md:ml-6 text-textColor font-bold text-sm"
 				aria-label="Contact David van den Pol"
 			>
 				<span bis_skin_checked="4" class="mr-2">Let's talk</span>
-			</router-link>
+			</nuxt-link>
 		</div>
 	</nav>
 </template>
