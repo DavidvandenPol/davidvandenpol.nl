@@ -28,7 +28,7 @@ export function createRouter() {
                 component: Blog,
             },
             {
-                path: "/lets-talk",
+                path: "/letstalk",
                 component: LetsTalk,
             },
             {
@@ -36,7 +36,7 @@ export function createRouter() {
                 component: Portfolio,
             },
             {
-                path: "/social-media",
+                path: "/socialmedia",
                 component: SocialMedia,
             },
             {
