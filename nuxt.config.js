@@ -44,7 +44,8 @@ components: true,
 buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-compress'
+    'nuxt-compress',
+    '@nuxtjs/router'
 ],
 
 // Modules: https://go.nuxtjs.dev/config-modules
