@@ -38,36 +38,3 @@ header {
         }
     }
 }
-
-@keyframes title {
-    0% {
-        transform: translateY(95px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slug {
-    0% {
-        transform: translateY(90px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes cta {
-    0% {
-        transform: translateY(80px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
