@@ -10,13 +10,13 @@ import axios from "axios";
 
 export default {
 	async mounted() {
-        await axios.get("https://davidvandenpol.nl/wordpress/wp-json/wp/v2/pages/158")
+        await axios.get("https://davidvandenpol.nl/wordpress/wp-json/wp/v2/pages/266")
             .then(res => {
                 this.$store.commit("setPages", res.data.content.rendered);
             });
     },
     async fetch({ store }) {
-        return await axios.get("https://davidvandenpol.nl/wordpress/wp-json/wp/v2/pages/158")
+        return await axios.get("https://davidvandenpol.nl/wordpress/wp-json/wp/v2/pages/266")
             .then(res => {
                 store.commit("setPages", res.data.content.rendered);
             });

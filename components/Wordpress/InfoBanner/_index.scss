@@ -1,0 +1,28 @@
+.info-banner {
+    @apply container px-2 md:px-8 py-8 mx-auto rounded-lg;
+
+    .wp-block-columns {
+        @apply flex flex-col md:flex-row justify-between;
+
+        .wp-block-column {
+            @apply mb-4 md:mb-0;
+
+            @screen lg {
+                width: 400px;
+            }
+
+            h2 {
+                @apply text-3xl;
+                font-family: "Circular Bold";
+            }
+
+            p {
+                @apply md:mt-2 text-sm opacity-70;
+            }
+        }
+
+        .wp-block-column:last-child {
+            @apply mb-0;
+        }
+    }
+}
