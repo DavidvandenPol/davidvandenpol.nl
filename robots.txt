@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /wordpress/wp-content
+Disallow: /wordpress/
+NoIndex: /wordpress/wp-admin
+
+Sitemap: https://davidvandenpol.nl/sitemap.xml
