@@ -1,0 +1,45 @@
+.faq {
+    @apply container my-28 px-2 lg:px-0 mx-auto;
+
+    @screen lg {
+        width: 990px;
+    }
+
+    .wp-block-columns {
+        @apply flex flex-col sm:flex-row gap-8 sm:gap-24;
+
+        .wp-block-column:first-child {
+            h2 {
+                @apply text-5xl;
+                font-family: "Circular Bold";
+            }
+
+            p {
+                @apply mt-4;
+            }
+        }
+
+        .wp-block-column:last-child {
+            @screen sm {
+                width: 300%;
+            }
+
+            .wp-block-group {
+                @apply mb-8;
+
+                h3 {
+                    @apply text-xl;
+                    font-family: "Circular Bold";
+                }
+
+                p {
+                    @apply mt-2 text-sm;
+                }
+            }
+
+            .wp-block-group:last-child {
+                @apply mb-0;
+            }
+        }
+    }
+}
