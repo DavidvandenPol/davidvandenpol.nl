@@ -21,7 +21,7 @@
 
         .wp-block-column:last-child {
             @screen sm {
-                width: 300%;
+                width: 280%;
             }
 
             .wp-block-group {
@@ -29,7 +29,7 @@
 
                 h3 {
                     @apply text-xl;
-                    font-family: "Circular Bold";
+                    font-family: "Circular Bold", serif;
                 }
 
                 p {

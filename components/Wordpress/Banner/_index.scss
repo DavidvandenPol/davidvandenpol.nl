@@ -13,7 +13,7 @@ $theme-color: #0055B8;
 
         .banner-title {
             @apply mx-2 text-white text-3xl md:text-5xl;
-            font-family: "Circular Bold"
+            font-family: "Circular Bold", serif;
         }
 
         .banner-description {
@@ -27,7 +27,7 @@ $theme-color: #0055B8;
                 padding: 13px 34px;
                 background-color: $theme-color;
                 color: #fff;
-                font-family: "Circular Bold";
+                font-family: "Circular Bold", serif;
                 @apply hover:underline;
             }
         }

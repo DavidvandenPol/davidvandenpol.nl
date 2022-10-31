@@ -21,7 +21,7 @@ header {
 
     .wp-block-buttons {
         @apply flex mt-14 justify-center gap-4 md:gap-14 rounded-lg cursor-pointer;
-        font-family: "Circular Bold";
+        font-family: "Circular Bold", serif;
         animation: cta 400ms;
 
         .wp-block-button {
