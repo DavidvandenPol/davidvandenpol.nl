@@ -2,16 +2,19 @@
     font-family: "Circular Medium";
     src: local("Circular Medium"),
     url(~assets/fonts/productsans-medium-webfont.woff2);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Circular Regular";
     src: local("Circular Regular"),
     url(~assets/fonts/productsans-regular-webfont.woff2);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Circular Bold";
     src: local("Circular Bold"),
     url(~assets/fonts/productsans-bold-webfont.woff2);
+    font-display: swap;
 }
