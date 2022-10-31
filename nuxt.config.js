@@ -65,6 +65,14 @@ export default {
 
     target: "static",
 
+    render: {
+        bundleRenderer: {
+            shouldPreload: (type) => {
+                return ["script", "style", "font"].includes(type);
+            },
+        },
+    },
+
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
 
