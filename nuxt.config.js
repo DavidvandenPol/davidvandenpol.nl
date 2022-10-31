@@ -85,7 +85,12 @@ export default {
         "@nuxtjs/tailwindcss",
         "nuxt-compress",
         "@nuxtjs/router",
+        "@nuxtjs/google-analytics"
     ],
+
+    googleAnalytics: {
+        id: 'G-889G0G0PN0'
+    },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
