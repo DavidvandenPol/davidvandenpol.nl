@@ -2,7 +2,6 @@ $theme-color: #0055B8;
 
 .banner {
     @apply my-28;
-    animation: banner 300ms;
 
     .banner-wrapper {
         @apply container md:mx-auto py-14;
