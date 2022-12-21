@@ -1,0 +1,36 @@
+@use "./variables/typography" as *;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: $line-height-default;
+    font-weight: $font-weight-light;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-bold;
+}

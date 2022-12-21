@@ -1,0 +1,26 @@
+$basepath: "../../" !default;
+
+// Default, regular-weight
+@font-face {
+    font-family: "Product Sans";
+    src: url("../../font/product-sans/Product-Sans-Regular.woff2")
+        format("woff2");
+    font-display: fallback;
+}
+
+// Medium font-weight
+@font-face {
+    font-family: "Product Sans";
+    src: url("../../font/product-sans/Product-Sans-Medium.woff2")
+        format("woff2");
+    font-display: fallback;
+    font-weight: 500;
+}
+
+// Bold font-weight
+@font-face {
+    font-family: "Product Sans";
+    src: url("../../font/product-sans/Product-Sans-Bold.woff2") format("woff2");
+    font-display: fallback;
+    font-weight: 700;
+}
