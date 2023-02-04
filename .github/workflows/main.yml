@@ -18,7 +18,7 @@ jobs:
               run: npm ci
 
             - name: 🔨  Build Nuxt app
-              run: npm run build
+              run: npm run generate
 
             - name: 🚀  Deploy to FTP server
               uses: SamKirkland/FTP-Deploy-Action@4.3.3
