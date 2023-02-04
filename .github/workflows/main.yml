@@ -1,13 +1,25 @@
 on: push
 name: 🚀 Deploy website on push
 jobs:
-    web-deploy:
-        name: 🎉 Deploy
+    get-latest-release:
+        name: 🚚 Get latest release
         runs-on: ubuntu-latest
         steps:
             - name: 🚚 Get latest code
               uses: actions/checkout@v3
 
+            - name: 🔨 Building static site
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 14.20.0
+            - run: |
+                  npm install
+                  nuxt generate
+
+    sync-files:
+        name: 📂 Sync files
+        runs-on: ubuntu-latest
+        steps:
             - name: 📂 Sync files
               uses: SamKirkland/FTP-Deploy-Action@4.3.3
               with:
