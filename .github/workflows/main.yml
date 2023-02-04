@@ -6,33 +6,33 @@ on:
 
 jobs:
     build:
-        name: 🔨 Building static site
+        name: 🔨  Building static site
         runs-on: ubuntu-latest
         steps:
-            - name: ✅ Checkout repository
+            - name: ✅  Checkout repository
               uses: actions/checkout@main
-            - name: 📝 Install dependencies
+            - name: 📝  Install dependencies
               run: npm ci
-            - name: 🔨 Build dependencies
+            - name: 🔨  Build dependencies
               run: npm run build
-            - name: 📚 Archive production artifact
+            - name: 📚  Archive production artifact
               uses: actions/upload-artifact@main
               with:
-                  name: dist
-                  path: dist
+                  name: .output/public
+                  path: .output/public
     deploy:
-        name: Deploy 🚀
+        name: 🚀 Deploy
         needs: build
         runs-on: ubuntu-latest
         steps:
-            - name: ✅ Checkout repository
+            - name: ✅  Checkout repository
               uses: actions/checkout@main
-            - name: 🔱 Download artifact
+            - name: 🔱  Download artifact
               uses: actions/download-artifact@main
               with:
-                  name: dist
-                  path: dist
-            - name: 📂 Sync files
+                  name: .output/public
+                  path: .output/public
+            - name: 📂  Sync files
               uses: SamKirkland/FTP-Deploy-Action@4.3.3
               with:
                   server: ftp.strato.com
