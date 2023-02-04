@@ -26,5 +26,5 @@ jobs:
                   server: ftp.strato.com
                   username: 512259297.swh.strato-hosting.eu
                   password: ${{ secrets.FTP_PASSWORD }}
-                  local-dir: .output/public/
+                  local-dir: dist/
                   server-dir: /public/
