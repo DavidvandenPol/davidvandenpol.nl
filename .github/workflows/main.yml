@@ -6,7 +6,8 @@ on:
             - main
 
 jobs:
-    deploy:
+    build-and-deploy:
+        name: 🔨  Build and deploy
         runs-on: ubuntu-latest
 
         steps:
@@ -25,5 +26,5 @@ jobs:
                   server: ftp.strato.com
                   username: 512259297.swh.strato-hosting.eu
                   password: ${{ secrets.FTP_PASSWORD }}
-                  localPath: dist/
-                  remotePath: /public/
+                  local-dir: .output/public
+                  server-dir: /public/
