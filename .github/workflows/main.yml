@@ -20,9 +20,9 @@ jobs:
               run: npm run build
 
             - name: 🚀  Deploy to FTP server
-              uses: samkohli/ftp-deploy-action@v0.6.0
+              uses: SamKirkland/FTP-Deploy-Action@4.3.3
               with:
-                  host: ftp.strato.com
+                  server: ftp.strato.com
                   username: 512259297.swh.strato-hosting.eu
                   password: ${{ secrets.FTP_PASSWORD }}
                   localPath: dist/
