@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://yourseoresult.com/sitemap.xml
+Sitemap: https://davidvandenpol.nl/sitemap.xml
