@@ -1,3 +1,12 @@
-@use "fonts/product-sans";
 @use "base";
 @use "typography";
+@use "tailwind.scss";
+
+@use "components/hero.scss";
+@use "components/feature.scss";
+@use "components/pricing.scss";
+@use "components/textImage.scss";
+@use "components/testimonial.scss";
+@use "components/news-letter.scss";
+@use "components/blog-overview.scss";
+@use "components/landing-page.scss";

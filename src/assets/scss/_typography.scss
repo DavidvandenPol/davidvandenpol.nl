@@ -8,6 +8,7 @@ body {
     font-family: "Product Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: $line-height-default;
     font-weight: $font-weight-light;
+    color: $font-color;
 }
 
 input,
@@ -33,4 +34,9 @@ h4,
 h5,
 h6 {
     font-weight: $font-weight-bold;
+}
+
+a {
+    text-decoration: none;
+    color: $font-color;
 }

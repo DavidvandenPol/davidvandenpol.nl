@@ -1,0 +1,33 @@
+.feature {
+    @apply mt-12 mb-16 px-4 mx-auto max-w-screen-xl sm:my-32 lg:px-6;
+
+    .feature-title {
+        @apply max-w-screen-md m-auto text-center mb-8 lg:mb-12;
+
+        h2 {
+            @apply mb-4 text-4xl tracking-tight font-extrabold text-gray-900;
+        }
+
+        p {
+            @apply text-gray-500 sm:text-xl;
+        }
+    }
+
+    .wp-block-columns {
+        @apply space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0;
+
+        .wp-block-column {
+            h3 {
+                @apply mb-2 text-center text-xl font-bold;
+            }
+
+            p {
+                @apply mb-6 text-center text-gray-500;
+
+                a {
+                    @apply text-primary-600 hover:underline;
+                }
+            }
+        }
+    }
+}

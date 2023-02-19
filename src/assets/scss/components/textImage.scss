@@ -1,0 +1,35 @@
+.text-image {
+    .wp-block-media-text {
+        @apply gap-16 items-center my-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:my-16 lg:px-6;
+
+        .wp-block-media-text__content {
+            @apply font-light text-gray-500 sm:text-lg;
+
+            h2 {
+                @apply mb-4 text-4xl tracking-tight font-extrabold text-gray-900;
+            }
+
+            p {
+                @apply mb-4;
+
+                a {
+                    @apply text-primary-600;
+                }
+            }
+
+            ul {
+                @apply mb-6;
+            }
+        }
+
+        .wp-block-media-text__media {
+            img {
+                @apply rounded-2xl hidden;
+
+                @screen lg {
+                    @apply block;
+                }
+            }
+        }
+    }
+}

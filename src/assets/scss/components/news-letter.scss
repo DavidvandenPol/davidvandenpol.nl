@@ -1,0 +1,11 @@
+.news-letter {
+    @apply mx-auto mb-16 px-4 max-w-screen-md lg:my-16 lg:px-6 sm:text-center;
+
+    h2 {
+        @apply mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl;
+    }
+
+    p {
+        @apply mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl;
+    }
+}

@@ -3,6 +3,9 @@ export default defineNuxtConfig({
 
     app: {
         head: {
+            htmlAttrs: {
+                lang: "en",
+            },
             link: [
                 {
                     rel: "preload",
@@ -28,4 +31,10 @@ export default defineNuxtConfig({
             extensions: ["vue"],
         },
     ],
+
+    nitro: {
+        compressPublicAssets: true,
+    },
+
+    modules: ["@nuxtjs/tailwindcss"],
 });
